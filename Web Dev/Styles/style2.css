@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+header {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.search-bar input {
+    padding: 5px;
+    width: 200px;
+}
+
+.games-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    width: 300px;
+    margin: 20px;
+    border: 2.5px solid #041cb5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover img {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 100%;
+    transition: 0.5s ease;
+    opacity: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+iframe {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; 
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+    max-height: 315px; 
+}
+
+button {
+    background-color: #041cb5;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a80a30;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .games-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+li::marker {
+  color: transparent;
+}
+
+footer {
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+/* Mobile View */
+@media (max-width: 480px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px; 
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .search-bar input {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .search-bar {
+        margin-top: 10px;
+    }
+}

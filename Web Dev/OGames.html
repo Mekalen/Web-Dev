@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Order Page</title>
+	<link
+        rel="icon"
+        href="Images/Home/logo.jpg"
+        type="image/x-icon"
+    />
+    <link rel="stylesheet" href="Styles/style5.css">
+    <link rel="stylesheet" href="Styles/slider.css">
+	<script src="JavaScript/Java.js"></script> 
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <h1 class="logo">Drop Games</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Games.html">Games</a></li>
+            </ul>
+        </nav>
+		
+	<img src="Images/Home/dark.jpeg"alt="Icon" height="40px"width="40px">		
+		
+        <label class="switch">
+            <input type="checkbox" id="themeToggle" onchange="toggleTheme()">
+            <span class="slider round"></span>
+        </label>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+    </div>
+</header>
+
+<div class="order-container">
+    <h1 class="order-title">Place Your Order</h1>
+    <form class="order-form">
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="product">Games</label>
+            <select id="product" name="product" required>
+                <option value="games">Hellblade 2   R799.00</option>
+                <option value="games">COD Black OPS 6 R2 000.00</option>
+                <option value="games">Street Fighter 6   R1 879.00</option>
+				<option value="games">Elden Ring   R849.00</option>
+                <option value="games">CyberPunk 2077   R985.00</option>
+				<option value="games">Baldurs Gate 3   R800.00</option>
+                <option value="games">Spider-Man: Miles Morales   R431.00</option>
+				<option value="games">Resident Evil 8   R719.00</option>
+                <option value="games">Forza Horizon 5  R500.00</option>
+				<option value="games">Black Myth: Wukong   R849.00</option>
+            </select>
+        </div>
+		<div class="form-group">
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" name="quantity" placeholder="1" min="1" required>
+        </div>
+		
+        <div class="form-group">
+            <label for="address">Shipping Address</label>
+            <textarea id="address" name="address" rows="4" placeholder="Enter your shipping address" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Submit Order</button>
+    </form>
+</div>
+
+<footer>
+            <!-- Legal and Contact Info -->
+    <div style="margin-bottom: 10px;">
+      <a href="https://servicetrust.microsoft.com/viewpage/GDPR" target="_blank" style="color: #fff; margin-right: 20px; text-decoration: none;">Privacy Policy</a>
+      <a href="https://policies.google.com/privacy?hl=en-US" target="_blank" style="color: #fff; margin-right: 20px; text-decoration: none;">Terms of Service</a>
+    </div>
+
+    <!-- Contact Information -->
+    <div style="margin-bottom: 10px;">
+      <p>Email: <a href="mailto:support@dropgames.com" target="_blank" style="color: #f39c12; text-decoration: none;">support@dropgames.com</a></p>
+      <p>Phone: <a href="tel:+27 64 757 3116" target="_blank" style="color: #f39c12; text-decoration: none;">+27 64 757 3116</a></p>
+      <p>Address: 456 Uptown Road, Durban</p>
+    </div>
+
+    <!-- Copyright -->
+    <p style="font-size: 14px; color: #ccc;">&copy; 2024 Drop Games. All Rights Reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
